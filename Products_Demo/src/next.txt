@@ -1,0 +1,6 @@
+1.make a signup page --Completed
+2.add signup functionality --Completed
+3.navigate to login after signup --Completed
+4.make emp table 
+5.show the database info on react
+6.make routes to update delete the records through server using client(frontend);
