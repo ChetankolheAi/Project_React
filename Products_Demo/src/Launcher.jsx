@@ -20,34 +20,28 @@ function Launcher() {
   return (
     <div>
 
-      <Navbar
-        
-      />
+      <Navbar/>
 
-      <Routes>
+        <Routes>
 
-        <Route path="/"element={
-            <ProtectedRoute>
-              <Home />
-            </ProtectedRoute>
-          }
-        />
-        <Route path="/aboutus" element={<Aboutus />}    />
-        <Route path="/contactus" element={<Contactus />}/>
-        <Route path="/signup" element={<Signup />}/>
-        <Route path="/login"  
-          element={
-            <Login/>
+          <Route path="/"element={
+              <ProtectedRoute>
+                <Home />
+              </ProtectedRoute>
           }/>
+          <Route path="/aboutus" element={<Aboutus />}/>
+          <Route path="/contactus" element={<Contactus />}/>
+          <Route path="/signup" element={<Signup />}/>
+          <Route path="/login"  element={<Login/>}/>
           <Route path="/profile" element={
-            <ProtectedRoute>
-              <Profile />
-            </ProtectedRoute>}/>
+              <ProtectedRoute>
+                <Profile />
+              </ProtectedRoute> 
+          }/>
 
-      </Routes>
+        </Routes>
 
-      <ToastContainer
-      />
+      <ToastContainer/>
 
     </div>
   );
